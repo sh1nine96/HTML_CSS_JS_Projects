@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to top left, rgb(71, 234, 234), rgb(4, 174, 174), rgb(0, 55, 255),
+            rgb(107, 8, 245), rgb(233, 97, 233), rgb(239, 164, 239));
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    font-family: 'DynaPuff', cursive;
+}
+
+.clock {
+    display: flex;
+    font-family: 'DynaPuff', cursive;
+
+}
+
+.clock div {
+    margin: 5px;
+    position: relative;
+}
+
+.clock span {
+    height: 30vh;
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(10, 10, 10);
+    color: rgb(252, 251, 251);
+    opacity: .8;
+    font-size: 5rem;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+
+}
+
+.clock .text {
+    height: 8vh;
+    font-size: 1rem;
+    background-color: rgb(78, 2, 78);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    opacity: .7;
+}
+
+.clock #ampm {
+    bottom: 0;
+    position: absolute;
+    width: 5vw;
+    height: 8vh;
+    font-size: 1rem;
+    background: rgb(2, 125, 53);
+    opacity: .8;
+  }
+
+@media screen and (max-width: 800px) {
+    .clock {
+        width: 90vw;
+        height: 50vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+        position: absolute;
+        top: 287px;
+    }
+
+    .clock div {
+        margin: 5px;
+        position: relative;
+    }
+
+    .clock span {
+        height: 25vh;
+        width: 20vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+    }
+
+    .clock .text {
+        height: 4vh;
+        font-size: .7rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .clock #ampm {
+        position: absolute;
+        top: 114px;
+        height: 4vh;
+        width: 8vw;
+        font-size: .7rem;
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    /* .clock {
+        width: 50vw;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+    } */
+}
