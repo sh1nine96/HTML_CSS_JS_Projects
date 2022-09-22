@@ -1,4 +1,4 @@
-import { Food_Category } from "./Food_Category";
+import { FoodCategory } from "./Food_Category";
 
 class FoodItem {
   name: string;
@@ -27,7 +27,9 @@ class FoodItem {
   }
 }
 
-let fc1 = new Food_Category(Food_Category.FOOD_CATEGORY_BIRYANI);
+let fc1 = new FoodCategory(FoodCategory.FOOD_CATEGORY_BIRYANI);
 
 let foodItem1 = new FoodItem("Ambur Biryani", fc1, 4.5, 10, "");
 foodItem1.display();
+
+export { FoodItem };

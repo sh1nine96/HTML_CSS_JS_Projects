@@ -5,7 +5,7 @@ const FOOD_CATEGORY_VEGETABLE = "vegetable";
 const FOOD_CATEGORY_CHINESE = "chinese";
 const FOOD_CATEGORY_SOUTH_INDIAN = "south-indian";
 
-class Food_Category {
+class FoodCategory {
   name: string;
   constructor(name: string) {
     this.name = name;
@@ -36,7 +36,7 @@ class Food_Category {
   }
 }
 
-let fc1 = new Food_Category(FOOD_CATEGORY_BIRYANI);
+let fc1 = new FoodCategory(FOOD_CATEGORY_BIRYANI);
 fc1.display();
 
-export { Food_Category };
+export { FoodCategory };
