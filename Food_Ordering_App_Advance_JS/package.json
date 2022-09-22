@@ -1,0 +1,12 @@
+{
+  "name": "food_ordering_app_advance_js",
+  "version": "1.0.0",
+  "main": "Food_Category.js",
+  "scripts": {
+    "start": "http-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": ""
+}

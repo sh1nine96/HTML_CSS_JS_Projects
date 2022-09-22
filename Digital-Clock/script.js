@@ -1,7 +1,7 @@
 const hour = document.getElementById(`hours`);
 const minute = document.getElementById(`minutes`);
 const second = document.getElementById(`seconds`);
-const amPM = document.getElementById(`ampm`);
+const ampm = document.getElementById(`ampm`);
 
 function updateClock() {
     let h = new Date().getHours()
@@ -11,7 +11,7 @@ function updateClock() {
 
     if (h > 12) {
         h = h - 12;
-        amPM = `PM`
+        ap = `PM`
     }
 
     h = h <10? "0" + h: h;
@@ -21,7 +21,7 @@ function updateClock() {
     hour.innerText = h;
     minute.innerText = m;
     second.innerText = s;
-    amPM.innerText = ap;
+    ampm.innerText = ap;
 
     setTimeout(() => {
         updateClock();
