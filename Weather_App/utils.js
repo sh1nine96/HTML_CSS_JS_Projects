@@ -1,3 +1,5 @@
+const DEGREE_CELCIUS_SYMBOL = "&#8451";
+
 class Utils {
   static formatDate() {
     let currentDate = new Date();
@@ -12,4 +14,4 @@ class Utils {
   }
 }
 
-export { Utils };
+export { Utils, DEGREE_CELCIUS_SYMBOL };

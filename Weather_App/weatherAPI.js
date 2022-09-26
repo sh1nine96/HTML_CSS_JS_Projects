@@ -1,7 +1,7 @@
 // let weather = {
 //   apiKey: "d01389391f2d4fae741c13a60161a2ae",
 // };
-import fetch from "cross-fetch";
+// import fetch from "cross-fetch";
 
 const API_BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
 const API_KEY = "d01389391f2d4fae741c13a60161a2ae";
@@ -21,7 +21,7 @@ class WeatherAPI {
   async invoke2() {
     let response = await fetch(this.apiURL);
 
-    if (response === 200) {
+    if (response.status === 200) {
       let responseJSON = await response.json();
       return responseJSON;
     } else {
@@ -32,7 +32,7 @@ class WeatherAPI {
   buildURL(userData) {
     this.apiURL.searchParams.append("q", userData);
     this.apiURL.searchParams.append("appid", API_KEY);
-    // this.apiURL.searchParams.append("units", "metric");
+    this.apiURL.searchParams.append("units", "metric");
 
     console.log(`url is ${this.apiURL}`);
   }
