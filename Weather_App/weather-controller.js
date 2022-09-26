@@ -40,7 +40,7 @@ class WeatherController {
     tempElement.innerHTML = `${responseJSON.main.temp} ${DEGREE_CELCIUS_SYMBOL}`;
 
     let descriptionElement = document.querySelector(".weather .description");
-    descriptionElement.innerText = `${responseJSON.weather[0].description}`;
+    descriptionElement.innerText = `${responseJSON.weather[0].main}`;
 
     let lowHighElement = document.querySelector(".weather .low-hi");
     lowHighElement.innerHTML = `${responseJSON.main.temp_min} ${DEGREE_CELCIUS_SYMBOL} /
