@@ -1,5 +1,7 @@
+/* google fonts being imported */
 @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
 
+/* css of common body */
 body {
   margin: 0;
   padding: 0;
@@ -11,6 +13,7 @@ body {
   font-family: "Patrick Hand", cursive;
 }
 
+/* css of main container */
 .container {
   width: 45%;
   height: 45vh;
@@ -33,6 +36,7 @@ body {
   box-shadow: inset 8px 8px 8px #cdced1, inset -8px -8px 8px #ffffff;
 }
 
+/* from here we have cc for buttons */
 .btns {
   width: 100%;
   margin-top: 1.5em;
@@ -60,6 +64,8 @@ body {
   cursor: pointer;
 }
 
+/* css for =(equals) button */
+
 #eval {
   background: #33ccff;
   color: #fff;
@@ -70,6 +76,7 @@ body {
   box-shadow: inset 5px 5px 8px #00ace6, inset -5px -5px 8px #00ace6;
 }
 
+/* css for all clear button */
 #ac {
   background: #33cc33;
   color: #fff;
@@ -79,6 +86,7 @@ body {
   box-shadow: inset 5px 5px 8px #2eb82e, inset -5px -5px 8px #33cc33;
 }
 
+/* css for backspace button */
 #ce {
   background: #ff3399;
   color: #fff;
